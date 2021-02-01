@@ -4,5 +4,5 @@ const submitButton = document.getElementById('submit-button');
 
 // set event listeners to update state and DOM
 submitButton.addEventListener('click', () => {
-    window.location = './Main Page/';
-})
+    window.location = './main-page/';
+});
