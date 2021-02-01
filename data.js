@@ -21,7 +21,6 @@ const wilson = {
     description: 'A small town with interesting charm, a whirly gig festival is held here every year',
 
 
-=======
 };
 
 
@@ -36,7 +35,6 @@ const piedras = {
     description: 'Known affectionately as “the safe border” Piedras Negras is just across the US border from the town of Eagle Pass.'
 
 
-=======
 };
 
 const fuita = {
@@ -109,4 +107,4 @@ const places = [
     marfa, seffner, stehekin, calipatria, caveJunction, fuita, piedras, wilson, saxapahaw
 ];
 
-export default places; 
+export default places;
