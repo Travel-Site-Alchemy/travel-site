@@ -4,23 +4,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="../styles/home.css">
+    <title>Ventana</title>
 </head>
 
 <body>
     <header>
-        Name of site
+        Welcome to Ventana!
     </header>
-
+    <div>Please select a region</div>
     <nav>
-        <a class="nav-bar-links" href="">HOME</a>
-        <a class="nav-bar-links" href="">REGIONS</a>
-        <a class="nav-bar-links" href="">USER</a>
-        <a class="nav-bar-links" href="">HELP</a>
-        <a class="nav-bar-links" href="">ABOUT US</a>
+        <a class="nav-bar-links" href="./index.html">HOME</a>
+        <a class="nav-bar-links" href="../region-folder/index.html">REGIONS</a>
+        <a class="nav-bar-links" href="../cart/">My Places</a>
+        <a class="nav-bar-links" href="../help/index.html">HELP</a>
+        <a class="nav-bar-links" href="../about/index.html">ABOUT US</a>
     </nav>
-
-    <script type="module" src="main.js"></script>
+    <form id="region-form">
+        <ul>
+            <li>Northwest<input type="radio" name="region" value="northwest"></li>
+            <li>Southwest<input type="radio" name="region" value="southwest"></li>
+            <li>Middle<input type="radio" name="region" value="middle"></li>
+            <li>Northeast<input type="radio" name="region" value="northeast"></li>
+            <li>Southeast<input type="radio" name="region" value="southeast"></li>
+        </ul>
+        <button>Submit</button>
+    </form>
+    <script type="module" src="./main.js"></script>
 </body>
 
 </html>
