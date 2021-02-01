@@ -27,4 +27,15 @@ export function setCart(CART) {
     localStorage.setItem(CART, stringyCart);
 }
 
-export
+export function addToCart(id) {
+    const cart = getCart();
+    const cartItem = findById(cart, id);
+    if (cartItem) {
+        const newItem = {
+            id: id,
+
+        };
+        cart.push(newItem);
+    }
+    setCart(cart);
+}
