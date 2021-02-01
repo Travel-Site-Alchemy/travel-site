@@ -19,7 +19,10 @@ const wilson = {
     tagline: 'Home of the Whirlygig',
     attractions: 'Whirlygig Festival',
     description: 'A small town with interesting charm, a whirly gig festival is held here every year',
+
+
 };
+
 
 const piedras = {
     id: '3',
@@ -30,6 +33,8 @@ const piedras = {
     tagline: 'The home of the inventor of Nachos',
     attractions: 'International Day of the Nacho takes place every October 21',
     description: 'Known affectionately as “the safe border” Piedras Negras is just across the US border from the town of Eagle Pass.'
+
+
 };
 
 const fuita = {
@@ -102,4 +107,4 @@ const places = [
     marfa, seffner, stehekin, calipatria, caveJunction, fuita, piedras, wilson, saxapahaw
 ];
 
-export default places; 
+export default places;
