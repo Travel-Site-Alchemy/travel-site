@@ -14,32 +14,16 @@ const regionInput = document.querySelector('input');
 regionForm.addEventListener('submit', (e) => {
     e.preventDefault();
 
+    const userClickChoice = document.querySelector('input:checked');
+    const userRegion = userClickChoice.value;
 
-    // const formData = new FormData(regionForm);
-    // console.log(formData);
-    // const regionId = formData.get(userSelection);
-
-    for (let place of places) {
-        const userSelection = regionInput.value;
-        // const regionChoice = findById(place, userSelection);
-
-        console.log(userSelection);
-        console.log(regionChoice);
-    }
-
-
-
+    window.location = `../region-folder/?id=${userRegion}`;
 
 });
 
 
+//?id=
+// need eventhandler to show all the towns in the region to show up
 
 
-// for (let place of places) {
 
-// }
-
-
-// if (places.region === 'south') {
-
-// }
