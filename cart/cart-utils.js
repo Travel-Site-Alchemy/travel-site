@@ -17,14 +17,14 @@ export function getCart() {
     }
     else {
         const stringyDefaultCart = JSON.stringify(defaultCart);
-        localStorage.setItem(CART, stringyDefaultCart);
+        localStorage.setItem('CART', stringyDefaultCart);
         return defaultCart;
     }
 }
 
-export function setCart(CART) {
-    const stringyCart = JSON.stringify(CART);
-    localStorage.setItem(CART, stringyCart);
+export function setCart(BOOGER) {
+    const stringyCart = JSON.stringify(BOOGER);
+    localStorage.setItem('CART', stringyCart);
 }
 
 export function addToCart(id) {
