@@ -29,7 +29,7 @@ const wilson = {
 const piedras = {
     id: '3',
     regionId: '3',
-    Town: 'Piedras Negras, Mexico',
+    town: 'Piedras Negras, Mexico',
     population: '163,595',
     state: 'Coahuila',
     region: 'central',
@@ -40,12 +40,12 @@ const piedras = {
 
 };
 
-const fuita = {
+const fruita = {
     id: '4',
     regionId: '4',
-    Town: 'Fruita',
+    town: 'Fruita',
     population: '13, 236',
-    State: 'colorado',
+    state: 'colorado',
     region: 'southwest',
     tagline: 'Quirky desert town that celebrates a headless chicken and their legacy',
     attractions: 'Dinosaur Journey Museum, Mike the headless chicken',
@@ -67,7 +67,7 @@ const caveJunction = {
 const calipatria = {
     id: '6',
     regionId: '4',
-    Town: 'Calipatria',
+    town: 'Calipatria',
     Population: '7,395',
     State: 'CA',
     Region: 'southwest',
@@ -114,7 +114,7 @@ const marfa = {
 
 
 const places = [
-    marfa, seffner, stehekin, calipatria, caveJunction, fuita, piedras, wilson, saxapahaw
+    marfa, seffner, stehekin, calipatria, caveJunction, fruita, piedras, wilson, saxapahaw
 ];
 
 export default places;
