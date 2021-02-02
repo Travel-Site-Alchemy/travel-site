@@ -45,6 +45,7 @@ const fruita = {
     regionId: '4',
     town: 'Fruita',
     population: '13, 236',
+    img: 'Fruita.png',
     state: 'colorado',
     region: 'southwest',
     tagline: 'Quirky desert town that celebrates a headless chicken and their legacy',
@@ -68,12 +69,12 @@ const calipatria = {
     id: '6',
     regionId: '4',
     town: 'Calipatria',
-    Population: '7,395',
-    State: 'CA',
-    Region: 'southwest',
-    Tagline: 'One - of - a - kind monument in the California desert.',
-    Attractions: 'Salvation Mountain',
-    Description: 'Salvation Mountain is a literal man - made mountain 28 years in the making, covered in half a million gallons of latex paint.What started as a small monument made of dirt and painted cement became, over time, a sprawling adobe and hay - bale mountain complex, with peripheral structures made of telephone poles, tires, and car windows, as well as art cars and sculptures, all painted in a patchwork of stripes and color blocks of whatever paint was donated that week.',
+    population: '7,395',
+    state: 'CA',
+    region: 'southwest',
+    tagline: 'One - of - a - kind monument in the California desert.',
+    attractions: 'Salvation Mountain',
+    description: 'Salvation Mountain is a literal man - made mountain 28 years in the making, covered in half a million gallons of latex paint.What started as a small monument made of dirt and painted cement became, over time, a sprawling adobe and hay - bale mountain complex, with peripheral structures made of telephone poles, tires, and car windows, as well as art cars and sculptures, all painted in a patchwork of stripes and color blocks of whatever paint was donated that week.',
 };
 
 const stehekin = {
@@ -103,6 +104,7 @@ const seffner = {
 const marfa = {
     id: '9',
     regionId: '3',
+    img: 'Marfa.png',
     town: 'Marfa',
     population: '1981',
     state: 'TX',

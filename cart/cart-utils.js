@@ -3,7 +3,7 @@ const defaultCart = [];
 
 export function findById(someArray, id) {
     for (let item of someArray) {
-        if (item.regionId === id) {
+        if (item.id === id) {
             return item;
         }
     }

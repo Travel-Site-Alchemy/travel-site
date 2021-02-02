@@ -1,4 +1,4 @@
-import { findById } from '../cart/cart-utils.js';
+
 import places from '../data.js';
 
 const regionList = document.querySelector('ul');
@@ -17,15 +17,15 @@ for (let region of regionArea) {
 
 
     const placeItem = document.createElement('li');
-
+    const a = document.createElement('a');
     const placePhoto = document.createElement('img');
     const placeTitle = document.createElement('h3');
-    placeTitle.textContent = region.town;
+    a.textContent = region.town;
+    a.href = `../town-folder/?id=${region.id}`;
 
 
 
     placeItem.append(placePhoto, placeTitle);
-    regionList.append(placeItem);
-
+    regionList.append(placeItem, a);
 
 }; 
