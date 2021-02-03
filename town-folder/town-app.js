@@ -1,11 +1,13 @@
 import places from '../data.js';
-import { findById } from '../cart/cart-utils.js';
+import { findById, addToCart, setCart, getCart } from '../cart/cart-utils.js';
 
 const townList = document.querySelector('div');
 
 
 const params = new URLSearchParams(window.location.search);
 const townId = params.get('id');
+const addButton = document.createElement('button');
+addButton.textContent = 'Want to Go?';
 
 const actualTown = findById(places, townId);
 const townPhoto = document.createElement('img');
@@ -24,6 +26,13 @@ li3.textContent = `Attractions: ${actualTown.attractions}`;
 townPhoto.src = `../assets/${actualTown.img}`;
 
 townStats.append(li1, li2, li3);
-townList.append(townTitle, townPhoto, townStats, townDescription);
+townList.append(townTitle, townPhoto, townStats, townDescription, addButton);
 
 
+
+addButton.addEventListener('click', () => {
+    const cartData = getCart();
+    cartData.wantList.push(actualTown.id);
+
+    setCart(cartData);
+});

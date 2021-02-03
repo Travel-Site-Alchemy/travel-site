@@ -14,7 +14,8 @@ form.addEventListener('submit', (e) => {
     const user = {
         name: formData.get('name'),
         age: formData.get('age'),
-        email: formData.get('email')
+        email: formData.get('email'),
+        wantList: [],
     };
 
     getCart();
