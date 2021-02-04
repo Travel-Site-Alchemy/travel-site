@@ -3,6 +3,7 @@ body, html {
     width: 100%;
     margin: 0;
     padding: 0;
+    font-family: 'Noto Sans', sans-serif;
     --color1: #0FA3B1;
     --color2: #B5E2FA;
     --color3: #F9F7F3;
@@ -14,11 +15,16 @@ ul {
     background-color: var(--color1);
     }
 .team {
-    display: grid;
+    /* display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-gap: 5px;
     width: 900px;
-    height: 400px;
+    height: 400px; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-items: center;
+    align-items: center;
     }
 .team-member {
     display: flex;
@@ -26,10 +32,16 @@ ul {
     align-items: center;
     justify-content: center;
     border: 2px solid black;
+    margin: 5px;
     border-radius: 5px;
+    height: 400px;
+    width: 175px;
+    font-size: .9em;
 }
 .team-member img {
     width: 150px;
+    border-radius: 25px;
+    border: 1px solid black
     
 }
 .team-member ul {
@@ -38,3 +50,53 @@ ul {
 div.columns {
     flex: 1;
 }
+
+.my-places-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    background-color: var(--color2);
+}
+
+.my-places-title {
+  text-align: center;
+  font-family: 'Kaushan Script', cursive;
+  color: var(--color5);
+}
+
+.my-places-nav {
+    
+}
+
+
+.nav-bar-links {
+    text-decoration: none;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.places-message {
+    margin: 10px;
+}
+
+.my-places-table {
+    display: block;
+    margin: 30px;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+}
+
+.my-places-tr{
+    display: block;
+    text-align: center;
+}
+.my-places-anchor {
+    text-decoration: none;
+}
+
