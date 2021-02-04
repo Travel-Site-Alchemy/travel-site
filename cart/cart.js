@@ -37,6 +37,7 @@ for (let wanted of wantedLocation) {
     linkTd.classList.add('my-places-linkTd');
 
 
+
     a.append(nameTd);
     table.append(tr);
     tr.append(a, linkTd, removeTown);
