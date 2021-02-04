@@ -5,14 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Noto+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../styles/home.css">
     <title>Ventana</title>
 </head>
 
-<body>
+<body class="my-places-body">
     <header>
-        Welcome to Ventana!
+        <h1 class="my-places-title">Ventana</h1>
         <nav>
             <a class="nav-bar-links" href="../index.html">HOME</a>
             <a class="nav-bar-links" href="../main-page/">REGIONS</a>
@@ -22,7 +22,7 @@
         </nav>
     </header>
 
-    <div id="region-div"></div>
+    <div id="region-div" class="region-message"></div>
     <div class="map-div"><img class="map-image" src="../assets/map.png">
         <form id="region-form">
             <ul>
@@ -42,7 +42,7 @@
                     </li>
                 </label>
             </ul>
-            <button>Submit</button>
+            <button class="map-button">Submit</button>
         </form>
     </div>
     <script type="module" src="./main.js"></script>
