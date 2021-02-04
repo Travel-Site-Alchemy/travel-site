@@ -24,8 +24,7 @@ for (let region of regionArea) {
     a.href = `../town-folder/?id=${region.id}`;
 
 
-
     placeItem.append(placePhoto, placeTitle);
     regionList.append(placeItem, a);
 
-}; 
+} 
