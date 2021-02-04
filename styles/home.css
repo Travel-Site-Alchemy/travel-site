@@ -3,6 +3,7 @@ body, html {
     width: 100%;
     margin: 0;
     padding: 0;
+    font-family: 'Noto Sans', sans-serif;
     --color1: #0FA3B1;
     --color2: #B5E2FA;
     --color3: #F9F7F3;
@@ -14,11 +15,16 @@ ul {
     background-color: var(--color1);
     }
 .team {
-    display: grid;
+    /* display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-gap: 5px;
     width: 900px;
-    height: 400px;
+    height: 400px; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-items: center;
+    align-items: center;
     }
 .team-member {
     display: flex;
@@ -26,14 +32,26 @@ ul {
     align-items: center;
     justify-content: center;
     border: 2px solid black;
+    margin: 5px;
     border-radius: 5px;
+    height: 400px;
+    width: 175px;
+    font-size: .9em;
 }
 .team-member img {
     width: 150px;
+    border-radius: 25px;
+    border: 1px solid black
+    
+}
+.team-member ul {
+    
+
 }
 div.columns {
     flex: 1;
 }
+
 .region-words {
     font-size: 2em;
     margin: 0;
@@ -61,5 +79,196 @@ div.columns {
     left: 40%;
 }
 
+
+
+.main-region { 
+    display: flex;
+    flex-direction: row;
+    background-color: var(--color4);
+}
+
+.region-towns { 
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: var(--color5);
+}
+
+.town-main { 
+    background-image: url("../assets/background2.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.town-page {
+    border: 4px solid var(--color1);
+    border-radius: 20px;
+    background-color: #F9F7F3;
+    max-width: 80%;
+    display: grid;
+    justify-items: center;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    font-size: 16px;
+    line-height: 1.5;
+
+.my-places-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    background-color: var(--color2);
+}
+
+.my-places-title {
+  text-align: center;
+  font-family: 'Kaushan Script', cursive;
+  color: var(--color5);
+}
+
+.my-places-nav {
+
+    
+}
+
+
+
+.town-title {
+    text-align: center;
+
+}
+
+.town-description {
+    width: 80%;
+    line-height: 20px;
+}
+
+.town-stats {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 30%;
+    text-align: center;
+    margin-top: 10px;
+    
+
+}
+
+.add-button { 
+    margin-top: 10px;
+    
+
+}
+
+.town-photo {
+    border: 3px solid var(--color5);
+    display: flex;
+    border-radius: 20px;
+    width: 70%;
+
+}
+
+.town-main { 
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    background-color: var(--color2);
+}
+
+
+.map-div {
+    height: 400px;
+    width: 100%;
+}
+
+.nav-bar-links {
+    text-decoration: none;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.places-message {
+    margin: 10px;
+}
+
+.my-places-table {
+    display: block;
+    margin: 30px;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+}
+
+.my-places-tr{
+    display: block;
+    text-align: center;
+}
+.my-places-anchor {
+    text-decoration: none;
+}
+
+.help-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+.help-header {
+    
+    color: var(--color5);
+    display: inline;
+}
+
+.help-subheader {
+    
+    color: var(--color1);
+    display: inline;
+}
+
+.help-name-form {
+    display: block;
+    width: 94%;
+    padding: 12px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+.help-email-form {
+    display: block;
+    width: 94%;
+    padding: 12px;
+    margin-bottom: 10px;
+}
+.help-message-form {
+    display: block;
+    width: 100%;
+    
+    height: 200px;
+    margin-bottom: 10px;
+   
+    
+}
+.help-submit {
+    background-color: var(--color5);
+    border: none;
+    color: white;
+    padding: 10px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    margin: 2px 2px;
+    cursor: pointer;
+    
+}
+.help-submit:hover {
+    background-color: var(--color1);
+}
 
 
