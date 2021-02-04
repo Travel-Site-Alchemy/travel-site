@@ -4,7 +4,7 @@ import { getCart } from '../cart/cart-utils.js';
 const regionDiv = document.getElementById('region-div');
 
 const cartData = getCart();
-regionDiv.textContent = `Welcome ${cartData.name}, please select a region`;
+regionDiv.textContent = `Welcome ${cartData.name}, find your destination by region.`;
 
 const regionForm = document.querySelector('#region-form');
 

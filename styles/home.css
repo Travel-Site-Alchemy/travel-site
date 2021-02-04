@@ -10,78 +10,119 @@ body, html {
     --color4: #EDDEA4;
     --color5: #F7A072;
 }
+
 ul {
     list-style: none;
-    background-color: var(--color1);
     }
+
+/* start of About Us pg styling */
 .team {
-    /* display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-gap: 5px;
-    width: 900px;
-    height: 400px; */
+    margin: 20px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-items: center;
     align-items: center;
-    }
+}
+
 .team-member {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    background-color: white;
     border: 2px solid black;
-    margin: 5px;
+    margin: 15px;
     border-radius: 5px;
     height: 400px;
     width: 175px;
     font-size: .9em;
 }
+
 .team-member img {
     width: 150px;
     border-radius: 25px;
     border: 1px solid black
     
 }
-.team-member ul {
-    
+/* End of About Us pg Styling */
 
-}
-div.columns {
-    flex: 1;
-}
 
+
+/* start map/main pg styling */
 .region-words {
     font-size: 2em;
     margin: 0;
-} 
+}
+
 .map-div {
+    display: flex;
     position: relative;
+    width:fit-content;
+    align-items: center;
+    justify-items: center;
+    flex-direction: column;
+    
 }
+
 .map-image {
-    width: 60%;
-    height: auto;
+    /* width: 60%; */
+    /* height: auto; */
+    border: 2px solid black;
+    border-radius: 10px;
+    position: relative;
+    margin: 10px;
+
 }
+
 #west {
     position: absolute;
     top: 25%;
-    left: 10%;
+    left: 15%;
 }
+
 #central {
     position: absolute;
-    top: 37%;
-    left: 25%;
+    top: 34%;
+    left: 45%;
 }
+
 #east {
     position: absolute;
-    top: 51%;
-    left: 40%;
+    top: 50%;
+    left: 65%;
 }
 
+.map-title {
+        font-family:'Kaushan Script', cursive;
+        color: var(--color5);
+}
+
+.map-button {
+        background-color: var(--color5);
+        border: none;
+        color: white;
+        padding: 10px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 18px;
+        margin: 2px 2px;
+        cursor: pointer;
+}
+
+.map-button:hover {
+        background-color: var(--color1);
+}
+
+.region-message {
+    margin: 20px;
+} 
+/* end map/main pg styling */
 
 
 
+/* start region page styling */
 .main-region { 
     display: flex;
     flex-direction: row;
@@ -95,6 +136,14 @@ div.columns {
     background-color: var(--color5);
 }
 
+.region-message {
+    text-align: center;
+}
+/* end region page styling */
+
+
+
+/* Start Town pg styling */
 .town-main { 
     background-image: url("../assets/background2.jpg");
     background-repeat: no-repeat;
@@ -115,57 +164,6 @@ div.columns {
     line-height: 1.5;
 }
 
-    .my-places-body {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-items: center;
-        background-color: var(--color2);
-    }
-    
-    .my-places-title {
-      text-align: center;
-      font-family: 'Kaushan Script', cursive;
-      color: var(--color5);
-    }
-    
-    .my-places-nav {
-        
-    }
-    
-    
-    .nav-bar-links {
-        text-decoration: none;
-        margin-left: 10px;
-        margin-right: 10px;
-        margin-bottom: 10px;
-    }
-    
-    .places-message {
-        margin: 10px;
-    }
-    
-    .my-places-table {
-        display: block;
-        margin: 30px;
-        background-color: white;
-        border: 2px solid black;
-        border-radius: 10px;
-        width: 50%;
-        align-items: center;
-        justify-content: center;
-    }
-    
-    .my-places-tr{
-        display: block;
-        text-align: center;
-    }
-    .my-places-anchor {
-        text-decoration: none;
-    }
-
-
-
 .town-title {
     text-align: center;
 
@@ -183,14 +181,10 @@ div.columns {
     width: 30%;
     text-align: center;
     margin-top: 10px;
-    
-
 }
 
 .add-button { 
     margin-top: 10px;
-    
-
 }
 
 .town-photo {
@@ -198,7 +192,6 @@ div.columns {
     display: flex;
     border-radius: 20px;
     width: 70%;
-
 }
 
 .town-main { 
@@ -207,27 +200,45 @@ div.columns {
     justify-content: center;
     background-color: var(--color2);
 }
+/* End Town pg styling */
 
 
-.map-div {
-    height: 400px;
-    width: 100%;
+
+/* Start My Places pg styling */
+.my-places-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    background-color: var(--color3);
 }
-
+    
+.my-places-title {
+    font-size: 3.0em;
+    text-align: center;
+    font-family: 'Kaushan Script', cursive;
+    color: var(--color5);
+    margin-top: 0;
+}
+    
 .nav-bar-links {
     text-decoration: none;
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-bottom: 10px;
+    margin: 20px;
+    padding: 20px;
+    color: var(--color1);
+}
+    
+.nav-bar-links:hover {
+    color: var(--color5);
 }
 
 .places-message {
-    margin: 10px;
+    margin: 20px;
 }
-
+    
 .my-places-table {
     display: block;
-    margin: 30px;
+    margin: 20px;
     background-color: white;
     border: 2px solid black;
     border-radius: 10px;
@@ -235,71 +246,23 @@ div.columns {
     align-items: center;
     justify-content: center;
 }
-
+    
 .my-places-tr{
     display: block;
     text-align: center;
 }
+
 .my-places-anchor {
     text-decoration: none;
 }
+/* End My Places pg styling */
 
-.help-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    
-}
-.help-header {
-    
-    color: var(--color5);
-    display: inline;
-}
 
-.help-subheader {
-    
-    color: var(--color1);
-    display: inline;
-}
 
-.help-name-form {
-    display: block;
-    width: 94%;
-    padding: 12px;
-    margin-top: 10px;
-    margin-bottom: 10px;
 
-}
-.help-email-form {
-    display: block;
-    width: 94%;
-    padding: 12px;
-    margin-bottom: 10px;
-}
-.help-message-form {
-    display: block;
-    width: 100%;
-    
-    height: 200px;
-    margin-bottom: 10px;
-   
-    
-}
-.help-submit {
-    background-color: var(--color5);
-    border: none;
-    color: white;
-    padding: 10px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 18px;
-    margin: 2px 2px;
-    cursor: pointer;
-    
-}
-.help-submit:hover {
-    background-color: var(--color1);
-}
+
+
+
+
+
 
