@@ -51,6 +51,39 @@ div.columns {
     flex: 1;
 }
 
+
+.main-region { 
+    display: flex;
+    flex-direction: row;
+    background-color: var(--color4);
+}
+
+.region-towns { 
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: var(--color5);
+}
+
+.town-main { 
+    background-image: url("../assets/background2.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.town-page {
+    border: 4px solid var(--color1);
+    border-radius: 20px;
+    background-color: #F9F7F3;
+    max-width: 80%;
+    display: grid;
+    justify-items: center;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    font-size: 16px;
+    line-height: 1.5;
+
 .my-places-body {
     display: flex;
     flex-direction: column;
@@ -66,9 +99,59 @@ div.columns {
 }
 
 .my-places-nav {
+
     
 }
 
+
+
+.town-title {
+    text-align: center;
+
+}
+
+.town-description {
+    width: 80%;
+    line-height: 20px;
+}
+
+.town-stats {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 30%;
+    text-align: center;
+    margin-top: 10px;
+    
+
+}
+
+.add-button { 
+    margin-top: 10px;
+    
+
+}
+
+.town-photo {
+    border: 3px solid var(--color5);
+    display: flex;
+    border-radius: 20px;
+    width: 70%;
+
+}
+
+.town-main { 
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    background-color: var(--color2);
+}
+
+
+.map-div {
+    height: 400px;
+    width: 100%;
+}
 
 .nav-bar-links {
     text-decoration: none;
@@ -158,3 +241,4 @@ div.columns {
 .help-submit:hover {
     background-color: var(--color1);
 }
+
