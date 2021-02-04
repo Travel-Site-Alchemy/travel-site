@@ -25,6 +25,7 @@ for (let wanted of wantedLocation) {
     nameTd.classList.add('my-places-nameTd');
     nameTd.textContent = location.town;
 
+
     const removeTown = document.createElement('td');
     removeTown.textContent = 'remove';
 
@@ -42,16 +43,19 @@ for (let wanted of wantedLocation) {
     tr.append(a, linkTd, removeTown);
 }
 
+
 const returnButton = document.querySelector('button');
 returnButton.addEventListener('click', () => {
     localStorage.clear();
     window.location = '../index.html';
 });
+
 // placesButton.addEventListener('click', () => {
 //     localStorage.removeItem('CART');
 //     window.location = '../main-page/index.html';
 // });
 
 // Render locations to page
+
 
 
