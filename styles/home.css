@@ -1,13 +1,1 @@
-.team {
-    display: flex;
-    flex-direction: row;
-    }
-
-.team-member {
-    border: 2px solid black;
-    border-radius: 5px;
-}
-
-ul {
-list-style: none;
-}
+/* add home page styles here */
