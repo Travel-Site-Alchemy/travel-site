@@ -112,25 +112,56 @@ div.columns {
     margin-bottom: 10%;
     font-size: 16px;
     line-height: 1.5;
-
-.my-places-body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-items: center;
-    background-color: var(--color2);
 }
 
-.my-places-title {
-  text-align: center;
-  font-family: 'Kaushan Script', cursive;
-  color: var(--color5);
-}
-
-.my-places-nav {
-
+    .my-places-body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-items: center;
+        background-color: var(--color2);
+    }
     
-}
+    .my-places-title {
+      text-align: center;
+      font-family: 'Kaushan Script', cursive;
+      color: var(--color5);
+    }
+    
+    .my-places-nav {
+        
+    }
+    
+    
+    .nav-bar-links {
+        text-decoration: none;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+    }
+    
+    .places-message {
+        margin: 10px;
+    }
+    
+    .my-places-table {
+        display: block;
+        margin: 30px;
+        background-color: white;
+        border: 2px solid black;
+        border-radius: 10px;
+        width: 50%;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .my-places-tr{
+        display: block;
+        text-align: center;
+    }
+    .my-places-anchor {
+        text-decoration: none;
+    }
 
 
 
