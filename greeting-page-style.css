@@ -1,0 +1,84 @@
+body, html {
+    height: 100%;
+    width: 100%;
+    
+    padding: 0;
+    --color1: #0FA3B1;
+    --color2: #B5E2FA;
+    --color3: #F9F7F3;
+    --color4: #EDDEA4;
+    --color5: #F7A072;
+    background-color: var(--color3);
+}
+.welcome-page-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.header-text {
+    color: var(--color5);
+    padding-top: 0px;
+    font-size: 2em;
+    display: inline;
+    
+}
+.sub-header-text {
+    color: var(--color1);
+    text-align: center;
+    display: inline;
+}
+.login-photo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    padding-bottom: 10px;
+   
+}
+.login-bar {
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 10px;
+    border: 2px solid black;
+    /* background-color: var(--color5); */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+    
+}
+.cover-photo {
+    width: 800px;
+    height: 500px;
+    border-radius: 15px;
+    /* border: 2px solid var(--color5) */
+}
+input {
+    background-color: var(--color4);
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    
+}
+.select-button {
+    background-color: var(--color5);
+    border: none;
+    color: white;
+    padding: 10px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    margin: 2px 2px;
+    cursor: pointer;
+    
+}
+.select-button:hover {
+    background-color: var(--color1);
+}
+.login-header {
+    background-color: var(--color4);
+}

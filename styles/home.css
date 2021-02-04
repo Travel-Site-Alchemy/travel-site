@@ -38,3 +38,61 @@ ul {
 div.columns {
     flex: 1;
 }
+.help-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+.help-header {
+    
+    color: var(--color5);
+    display: inline;
+}
+
+.help-subheader {
+    
+    color: var(--color1);
+    display: inline;
+}
+
+.help-name-form {
+    display: block;
+    width: 94%;
+    padding: 12px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+.help-email-form {
+    display: block;
+    width: 94%;
+    padding: 12px;
+    margin-bottom: 10px;
+}
+.help-message-form {
+    display: block;
+    width: 100%;
+    
+    height: 200px;
+    margin-bottom: 10px;
+   
+    
+}
+.help-submit {
+    background-color: var(--color5);
+    border: none;
+    color: white;
+    padding: 10px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    margin: 2px 2px;
+    cursor: pointer;
+    
+}
+.help-submit:hover {
+    background-color: var(--color1);
+}
