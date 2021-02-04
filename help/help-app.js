@@ -1,10 +1,11 @@
 const submitButton = document.getElementById('button');
-const secretDiv = document.querySelector('secret-div');
+// const secretDiv = document.querySelector('secret-div');
+const secretP = document.getElementById('secret-p');
+
+submitButton.addEventListener('click', (e) => {
+    e.preventDefault();
 
 
-submitButton.addEventListener('click', () => {
-    const secretP = document.querySelector('#secret-p');
+    secretP.textContent = `Thank you for sharing your feelings. we hear them AND respect them`;
 
-    secretP.textContent = `Thank You for sharing your feelings. we hear them AND respect them`;
-    secretDiv.append(secretP);
 });
