@@ -6,15 +6,10 @@ const regionList = document.querySelector('ul');
 const params = new URLSearchParams(window.location.search);
 const regionId = params.get('id');
 
-
-
 const regionArea = places.filter(place => place.regionId === regionId);
-
-console.log(regionArea);
 
 
 for (let region of regionArea) {
-
 
     const placeItem = document.createElement('li');
     const a = document.createElement('a');

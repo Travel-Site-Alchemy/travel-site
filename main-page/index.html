@@ -23,16 +23,28 @@
     </header>
 
     <div id="region-div"></div>
-    <form id="region-form">
-        <ul>
-            <li>Northwest<input type="radio" name="region" value="5"></li>
-            <li>Southwest<input type="radio" name="region" value="4"></li>
-            <li>Central<input type="radio" name="region" value="3"></li>
-            <li>Southeast<input type="radio" name="region" value="2"></li>
-            <li>Northeast<input type="radio" name="region" value="1"></li>
-        </ul>
-        <button>Submit</button>
-    </form>
+    <div class="map-div"><img class="map-image" src="../assets/map.png">
+        <form id="region-form">
+            <ul>
+                <label class="region-words" id="west">
+                    <li>
+                        West<input type="radio" name="region" value="1">
+                    </li>
+                </label>
+                <label class="region-words" id="central">
+                    <li>
+                        Central<input type="radio" name="region" value="2">
+                    </li>
+                </label>
+                <label class="region-words" id="east">
+                    <li>
+                        East<input type="radio" name="region" value="3">
+                    </li>
+                </label>
+            </ul>
+            <button>Submit</button>
+        </form>
+    </div>
     <script type="module" src="./main.js"></script>
 </body>
 

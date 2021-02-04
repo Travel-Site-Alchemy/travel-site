@@ -46,10 +46,39 @@ ul {
 }
 .team-member ul {
     
+
 }
 div.columns {
     flex: 1;
 }
+
+.region-words {
+    font-size: 2em;
+    margin: 0;
+} 
+.map-div {
+    position: relative;
+}
+.map-image {
+    width: 60%;
+    height: auto;
+}
+#west {
+    position: absolute;
+    top: 25%;
+    left: 10%;
+}
+#central {
+    position: absolute;
+    top: 37%;
+    left: 25%;
+}
+#east {
+    position: absolute;
+    top: 51%;
+    left: 40%;
+}
+
 
 
 .main-region { 
@@ -241,4 +270,5 @@ div.columns {
 .help-submit:hover {
     background-color: var(--color1);
 }
+
 
