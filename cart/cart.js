@@ -2,7 +2,7 @@ import { getCart, findById } from './cart-utils.js';
 import places from '../data.js';
 
 const cart = getCart();
-const placesButton = document.querySelector('button');
+
 const cartMessage = document.querySelector('div');
 cartMessage.textContent = `Hello ${cart.name}, here are your places to visit:`;
 
@@ -32,9 +32,6 @@ for (let wanted of wantedLocation) {
     const myTownImage = document.createElement('img');
     myTownImage.classList.add('my-places-image');
     myTownImage.src = `../assets/${location.img}`;
-
-    // const removeTown = document.createElement('td');
-    // removeTown.textContent = 'remove';
 
 
     a.href = `../town-folder/?id=${location.id}`;

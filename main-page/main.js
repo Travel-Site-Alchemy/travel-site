@@ -1,6 +1,5 @@
 import { getCart } from '../cart/cart-utils.js';
 
-
 const regionDiv = document.getElementById('region-div');
 
 const cartData = getCart();
