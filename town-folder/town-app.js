@@ -17,7 +17,6 @@ const townStats = document.createElement('ul');
 const li1 = document.createElement('li');
 const li2 = document.createElement('li');
 const li3 = document.createElement('li');
-const commentDiv = document.createElement('div');
 
 townTitle.textContent = actualTown.town;
 townDescription.textContent = actualTown.description;
@@ -32,14 +31,10 @@ townPhoto.classList.add('town-photo');
 townStats.classList.add('town-stats');
 townDescription.classList.add('town-description');
 addButton.classList.add('add-button');
-commentDiv.classList.add('comment-div');
+
 
 townStats.append(li1, li2, li3);
-townList.append(townTitle, townPhoto, townStats, addButton, townDescription, commentDiv);
-
-
-
-
+townList.append(townTitle, townPhoto, townStats, townDescription, addButton);
 
 addButton.addEventListener('click', () => {
     const cartData = getCart();
@@ -48,6 +43,15 @@ addButton.addEventListener('click', () => {
     setCart(cartData);
 
     addButton.disabled = true;
-    commentDiv.textContent = 'added to your wishlist! click "my places" to view';
+    addButton.textContent = 'Added!';
+
+    const hiddenButton = document.createElement('button');
+    hiddenButton.classList.add('hidden-button');
+    hiddenButton.textContent = 'My Places';
+    townList.append(hiddenButton);
+
+    hiddenButton.addEventListener('click', () => {
+        window.location = '../cart/index.html';
+    });
 
 });
