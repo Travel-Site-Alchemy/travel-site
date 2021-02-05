@@ -1,5 +1,5 @@
 import places from '../data.js';
-import { findById, addToCart, setCart, getCart } from '../cart/cart-utils.js';
+import { findById, setCart, getCart } from '../cart/cart-utils.js';
 
 const townList = document.querySelector('div');
 
