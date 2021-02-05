@@ -44,7 +44,6 @@ body, html {
     margin-left: auto;
     border-radius: 10px;
     border: 2px solid black;
-    /* background-color: var(--color5); */
     display: flex;
     justify-content: space-around;
     align-items: center;
