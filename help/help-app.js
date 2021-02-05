@@ -1,11 +1,11 @@
-const submitButton = document.getElementById('button');
-// const secretDiv = document.querySelector('secret-div');
 const secretP = document.getElementById('secret-p');
+const formForm = document.getElementById('help-submit-form');
 
-submitButton.addEventListener('click', (e) => {
+formForm.addEventListener('submit', (e) => {
     e.preventDefault();
 
+    formForm.reset();
 
-    secretP.textContent = `Thank you for sharing your feelings. we hear them AND respect them`;
+    secretP.textContent = 'Thank you for sharing your feelings. We hear them AND respect them.';
 
 });

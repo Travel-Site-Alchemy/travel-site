@@ -11,7 +11,7 @@ body, html {
     --color5: #F7A072;
 }
 
-ul {
+.main-list, .region-towns {
     list-style: none;
     }
 
@@ -42,9 +42,25 @@ ul {
 .team-member img {
     width: 150px;
     border-radius: 25px;
-    border: 1px solid black
+    border: 3px solid var(--color5);
     
 }
+
+.team-member-list {
+    /* list-style: none;
+    margin-left: 0;
+    padding-left: 0px;  */
+}
+
+.crew-header {
+    margin: 5%;
+    font-size: 20px;
+}
+
+h3 {
+    text-align: center;
+}
+
 /* End of About Us pg Styling */
 
 
@@ -68,7 +84,7 @@ ul {
 .map-image {
     /* width: 60%; */
     /* height: auto; */
-    border: 2px solid black;
+    border: 4px solid var(--color1);
     border-radius: 10px;
     position: relative;
     margin: 10px;
@@ -117,6 +133,7 @@ ul {
 
 .region-message {
     margin: 20px;
+    margin-top: 5%;
 } 
 /* end map/main pg styling */
 
@@ -124,20 +141,57 @@ ul {
 
 /* start region page styling */
 .main-region { 
-    display: flex;
-    flex-direction: row;
-    background-color: var(--color4);
+  background-color: var(--color4);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border-radius: 10px;
+  /* margin: 0; */
 }
 
 .region-towns { 
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     width: 100%;
+    padding-left: 0px; 
+    padding: 20px;
+    
+}
+
+.place-thumbnail {
+    border: 3px solid var(--color1);
+    width: 150px;
     background-color: var(--color5);
+    border-radius: 10px;
+    text-align: center;
+    margin: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+.place-title { 
+    font-weight: bolder;
+    font-size: 20px;
+    color: black;
+    padding: 5px;
+}
+
+.place-thumbnail:hover {
+    transform: scale(1.1);
 }
 
 .region-message {
     text-align: center;
+}
+
+.place-tag {
+    padding-bottom: 5px;
+}
+
+.region-photo { 
+    width: 100px;
+    height: 70px;
 }
 /* end region page styling */
 
@@ -145,20 +199,20 @@ ul {
 
 /* Start Town pg styling */
 .town-main { 
-    background-image: url("../assets/background2.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    background-color: var(--color3);
 }
 
 .town-page {
     border: 4px solid var(--color1);
     border-radius: 20px;
-    background-color: #F9F7F3;
+    background-color: white;
     max-width: 80%;
     display: grid;
     justify-items: center;
-    margin-top: 10%;
+    margin-top: 5%;
     margin-bottom: 10%;
     font-size: 16px;
     line-height: 1.5;
@@ -166,11 +220,11 @@ ul {
 
 .town-title {
     text-align: center;
-
+    font-size: 2.5em; 
 }
 
 .town-description {
-    width: 80%;
+    width: 70%;
     line-height: 20px;
 }
 
@@ -183,8 +237,38 @@ ul {
     margin-top: 10px;
 }
 
-.add-button { 
-    margin-top: 10px;
+.add-button {
+    background-color: var(--color5);
+    border: none;
+    color: white;
+    padding: 10px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    margin: 20px;
+    cursor: pointer;
+}
+
+.add-button:hover {
+    background-color: var(--color1);
+}
+
+.hidden-button {
+    background-color: var(--color5);
+    border: none;
+    color: white;
+    padding: 10px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    margin: 20px;
+    cursor: pointer;
+}
+
+.hidden-button:hover {
+    background-color: var(--color1);
 }
 
 .town-photo {
@@ -194,12 +278,7 @@ ul {
     width: 70%;
 }
 
-.town-main { 
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    background-color: var(--color2);
-}
+
 /* End Town pg styling */
 
 
@@ -233,7 +312,8 @@ ul {
 }
 
 .places-message {
-    margin: 20px;
+    margin: 5%;
+    margin-bottom: 1%
 }
     
 .my-places-table {
@@ -242,7 +322,7 @@ ul {
     background-color: white;
     border: 2px solid black;
     border-radius: 10px;
-    width: 50%;
+    /* width: 30%; */
     align-items: center;
     justify-content: center;
 }
@@ -250,12 +330,56 @@ ul {
 .my-places-tr{
     display: block;
     text-align: center;
+    margin: 40px;
+    margin-top: 20px;
 }
 
 .my-places-anchor {
     text-decoration: none;
+    color: black;
+}
+
+.my-places-image:hover {
+    transform: scale(1.1);
+}
+
+
+.my-places-image {
+    border: 3px solid var(--color5);
+    display: flex;
+    border-radius: 20px;
+    width: 200px;
+}
+
+.my-places-image-td {
+    padding-right: 0;
+}
+
+.my-places-nameTd {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.return-button {
+    background-color: var(--color5);
+    border: none;
+    color: white;
+    padding: 10px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    margin: 20px;
+    cursor: pointer;
+}
+
+.return-button:hover {
+    background-color: var(--color1);
 }
 /* End My Places pg styling */
+
 
 
 

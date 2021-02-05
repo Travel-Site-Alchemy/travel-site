@@ -4,7 +4,7 @@ import places from '../data.js';
 const cart = getCart();
 const placesButton = document.querySelector('button');
 const cartMessage = document.querySelector('div');
-cartMessage.textContent = `Hello ${cart.name}, here are your places to visit.`;
+cartMessage.textContent = `Hello ${cart.name}, here are your places to visit:`;
 
 
 const wantedLocation = cart.wantList;
@@ -25,10 +25,16 @@ for (let wanted of wantedLocation) {
     nameTd.classList.add('my-places-nameTd');
     nameTd.textContent = location.town;
 
+    const imageTd = document.createElement('td');
+    imageTd.classList.add('my-places-image-td');
 
-    const removeTown = document.createElement('td');
-    removeTown.textContent = 'remove';
 
+    const myTownImage = document.createElement('img');
+    myTownImage.classList.add('my-places-image');
+    myTownImage.src = `../assets/${location.img}`;
+
+    // const removeTown = document.createElement('td');
+    // removeTown.textContent = 'remove';
 
 
     a.href = `../town-folder/?id=${location.id}`;
@@ -37,25 +43,19 @@ for (let wanted of wantedLocation) {
     linkTd.classList.add('my-places-linkTd');
 
 
-
-    a.append(nameTd);
+    imageTd.append(myTownImage);
+    a.append(nameTd, imageTd);
     table.append(tr);
-    tr.append(a, linkTd, removeTown);
+    tr.append(a, linkTd);
 }
 
 
 const returnButton = document.querySelector('button');
+returnButton.classList.add('return-button');
 returnButton.addEventListener('click', () => {
     localStorage.clear();
     window.location = '../index.html';
 });
-
-// placesButton.addEventListener('click', () => {
-//     localStorage.removeItem('CART');
-//     window.location = '../main-page/index.html';
-// });
-
-// Render locations to page
 
 
 

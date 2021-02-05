@@ -2,10 +2,11 @@ const saxapahaw = {
     id: '1',
     regionId: '3',
     town: 'Saxapahaw',
+    img: 'saxapahaw.png',
     population: '1599',
     state: 'NC',
     region: 'east',
-    tagline: 'A quiet riverside village nestled in the country of north carolina.',
+    tagline: 'Small town big charm',
     attractions: 'value',
     description: 'A quet riverside village nestled in the country of north carolina, Saxapahaw is the ideal location for a quiet weekend getaway.',
 };
@@ -15,6 +16,7 @@ const wilson = {
     id: '2',
     regionId: '3',
     town: 'Wilson',
+    img: 'wilson.png',
     population: '49272',
     state: 'NC',
     region: 'east',
@@ -119,9 +121,102 @@ const marfa = {
     description: 'Marfa is a texas town some 2 hours west of Austin. Known originally for it’s minimalist art scene, the town has gained traction as a tourist destination. Visitors to the town just might also catch a glimpse of the ‘mystery lights’ which are bizarre lights that dance around the night sky.',
 };
 
+const butte = {
+    id: '10',
+    regionId: '1',
+    img: 'Butte.png',
+    town: 'Butte',
+    population: '34,551',
+    state: 'MT',
+    region: 'west',
+    tagline: 'Home of Evel Knievel',
+    attractions: 'Glacier National Park, Yellowstone National Park',
+    description: 'Activities in Butte include ranch vacations, natural hot springs, hiking, fishing and skiing.',
+};
+
+const galena = {
+    id: '11',
+    regionId: '2',
+    img: 'Galena.png',
+    town: 'Galena',
+    population: '3,249',
+    state: 'IL',
+    region: 'central',
+    tagline: 'Old mining town charm',
+    attractions: 'Vintage shopping, outdoor adventures',
+    description: 'Framed by the northwest Illinois hills, Galena welcomes travelers with small town architecture and a preserved business district.  Kayaking, hot-air balloon rides and outdoor adventures round out a stay.',
+};
+
+const stillwater = {
+    id: '12',
+    regionId: '2',
+    img: 'Stillwater.png',
+    town: 'Stillwater',
+    population: '19,341',
+    state: 'MN',
+    region: 'central',
+    tagline: 'Quiet river valley scenery',
+    attractions: 'Victorian architecture, gondola boat tours.',
+    description: 'Victorian mansions and the craggy river valley supply visitors with unique scenery.  Stillwater, about 20 miles east of St. Paul, has an irresistible mix of history and activities which bring in visitors from all over the world. Train and riverboat tours are a must when visiting.',
+};
+
+const custerCity = {
+    id: '13',
+    regionId: '2',
+    img: 'Custer.png',
+    town: 'Custer City',
+    population: '2,282',
+    state: 'SD',
+    region: 'central',
+    tagline: 'Gateway to the Black Hills',
+    attractions: 'Black Hills outdoor adventures',
+    description: 'Growing like an Old West boom town, Custer City is the gateway to the Black Hills’ best: Custer State Park, Mount Rushmore and Crazy Horse Memorial.',
+};
+
+const putInBay = {
+    id: '14',
+    regionId: '2',
+    img: 'Ohio.png',
+    town: 'Put-in-Bay',
+    population: '71',
+    state: 'OH',
+    region: 'central',
+    tagline: 'Boat only access to small shoreline town',
+    attractions: 'Cave tours, fishing and a 1917 carousel.',
+    description: 'Only boats connect South Bass Island and its town of Put-in-Bay to the mainland, so most visitors leave cars behind.',
+};
+
+const mystic = {
+    id: '15',
+    regionId: '3',
+    img: 'Mystic.png',
+    town: 'Mystic',
+    population: '4,221',
+    state: 'CT',
+    region: 'east',
+    tagline: 'Gimme PIZZA!',
+    attractions: 'Quaint New England charm',
+    description: 'This old port town offers way more than just pizza. Great in the off-season when barstools go back to the locals, visitors can enjoy quintessential New England charm including coastal architecture and a stop at the aquarium.',
+};
+
+const camden = {
+    id: '16',
+    regionId: '3',
+    img: 'Camden.png',
+    town: 'Camden',
+    population: '3,442',
+    state: 'ME',
+    region: 'east',
+    tagline: 'Story-book coastal harbor town',
+    attractions: 'Restaurants, scenic hikes, sailboat captains',
+    description: 'After visiting Camden, you’ll want to move here forever. Whether it’s a hike up Mount Battie, a sailboat tour, or a meal at any of the local-filled restaurants, Camden is the small town in Maine to visit.',
+};
+
+
+
 
 const places = [
-    marfa, seffner, stehekin, calipatria, caveJunction, fruita, piedras, wilson, saxapahaw
+    marfa, seffner, stehekin, calipatria, caveJunction, fruita, piedras, wilson, saxapahaw, butte, galena, stillwater, custerCity, putInBay, mystic, camden
 ];
 
 export default places;
