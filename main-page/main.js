@@ -13,6 +13,7 @@ regionForm.addEventListener('submit', (e) => {
     const userClickChoice = document.querySelector('input:checked');
     const userRegion = userClickChoice.value;
 
+    // nice use of URL params
     window.location = `../region-folder/?id=${userRegion}`;
 
 });

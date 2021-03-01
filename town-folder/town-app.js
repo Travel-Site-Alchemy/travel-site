@@ -18,6 +18,7 @@ const li1 = document.createElement('li');
 const li2 = document.createElement('li');
 const li3 = document.createElement('li');
 
+// might have been nice to move this work into a separate function, just to keep this main file tidy
 townTitle.textContent = actualTown.town;
 townDescription.textContent = actualTown.description;
 li1.textContent = `Population: ${actualTown.population}`;

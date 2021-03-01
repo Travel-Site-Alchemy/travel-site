@@ -4,6 +4,7 @@
 const test = QUnit.test;
 
 test('time to test a function', (expect) => {
+    // part of the rubric asked for at least three tested JS functions, so i would have like to see some here
     //Arrange
     // Set up your arguments and expectations
     const expected = true;
