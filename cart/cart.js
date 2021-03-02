@@ -9,6 +9,7 @@ cartMessage.textContent = `Hello ${cart.name}, here are your places to visit:`;
 
 const wantedLocation = cart.wantList;
 for (let wanted of wantedLocation) {
+    // this should probably have been a tested render function
     const location = findById(places, wanted);
 
     const table = document.querySelector('table');

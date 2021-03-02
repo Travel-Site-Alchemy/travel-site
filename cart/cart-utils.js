@@ -22,6 +22,7 @@ export function getCart() {
     }
 }
 
+// probably would want a more general parameter name here for maintainability :)
 export function setCart(BOOGER) {
     const stringyCart = JSON.stringify(BOOGER);
     localStorage.setItem('CART', stringyCart);

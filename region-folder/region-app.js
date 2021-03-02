@@ -5,11 +5,13 @@ const regionList = document.querySelector('ul');
 const params = new URLSearchParams(window.location.search);
 const regionId = params.get('id');
 
+// nice filter function!
 const regionArea = places.filter(place => place.regionId === regionId);
 
 
 for (let region of regionArea) {
 
+    // would have liked to see this DOM work refactored into a tested redner function
     const placeItem = document.createElement('li');
 
     const placeTag = document.createElement('li');
